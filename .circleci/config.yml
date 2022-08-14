@@ -4,6 +4,11 @@ jobs:
     docker:
       - image: cimg/base:2021.04
     steps:
+      - run:
+          name: Before checkout
+          command: |
+            ls -al
+            echo 'Before checkout'
       - checkout
       - run:
           name: The First Step
