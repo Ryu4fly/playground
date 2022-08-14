@@ -19,7 +19,7 @@ jobs:
           command: |
             ls -al
             echo '^^^Your repo files^^^'
-  Using-Code:
+  Using-Node:
     docker:
       - image: cimg/node:17.2
     steps:
